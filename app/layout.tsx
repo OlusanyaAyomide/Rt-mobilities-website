@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
+import SmoothScrolling from "@/components/providers/SmoothScrolling";
+import Header from "@/components/landing/Header";
+import Footer from "@/components/landing/Footer";
+
+const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,11 +28,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.variable}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <SmoothScrolling>
+          <Header />
+          <main className="min-h-screen bg-background flex flex-col font-sans">
+            {children}
+          </main>
+          <Footer />
+        </SmoothScrolling>
       </body>
     </html>
   );

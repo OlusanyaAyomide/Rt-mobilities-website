@@ -49,8 +49,11 @@ export default function HowWeWork() {
   };
 
   return (
-    <section id="how-we-work" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
+    <section id="how-we-work" className="relative py-20 bg-blue-50/30 overflow-hidden">
+      {/* Background Pattern - Plus CSS */}
+      <div className="absolute inset-0 z-0 opacity-[0.6] bg-pattern-plus" />
+
+      <div className="container relative z-10 mx-auto px-4">
         <div
           className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center"
           onMouseEnter={() => setIsPaused(true)}

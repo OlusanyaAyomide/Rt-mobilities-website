@@ -5,15 +5,37 @@ import { cn } from "@/lib/utils"
 function Card({
   className,
   size = "default",
+  isActive,
+  children,
   ...props
-}: React.ComponentProps<"div"> & { size?: "default" | "sm" }) {
+}: React.ComponentProps<"div"> & { size?: "default" | "sm"; isActive?: boolean }) {
   return (
     <div
       data-slot="card"
       data-size={size}
-      className={cn("ring-foreground/10 bg-card text-card-foreground gap-6 overflow-hidden rounded-xl py-6 text-sm shadow-xs ring-1 has-[>img:first-child]:pt-0 data-[size=sm]:gap-4 data-[size=sm]:py-4 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl group/card flex flex-col", className)}
+      className={cn(
+        "group/card relative hover:shadow-[0_0_20px_0_rgba(0,0,0,0.1)] flex flex-col gap-6 overflow-hidden rounded-xl py-6 text-sm shadow-xs transition-all duration-300",
+        // Base styles
+        "ring-foreground/10 ring-1",
+        // Active/Inactive styles
+        isActive
+          ? "bg-[#e9f3f366] border-primary/20 shadow-sm scale-[1.02]"
+          : "bg-card text-card-foreground hover:bg-white hover:border-primary/10",
+        // Size variants
+        "has-[>img:first-child]:pt-0 data-[size=sm]:gap-4 data-[size=sm]:py-4",
+        // Child radius fix
+        "*:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl",
+        className
+      )}
       {...props}
-    />
+    >
+      {children}
+      {/* Line drawn out from center effect */}
+      <div className={cn(
+        "absolute bottom-0 left-1/2 h-[2px] bg-primary transition-all duration-500 ease-out transform -translate-x-1/2",
+        isActive ? "w-full opacity-100" : "w-0 opacity-0"
+      )} />
+    </div>
   )
 }
 

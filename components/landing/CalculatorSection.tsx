@@ -159,7 +159,7 @@ export default function CalculatorSection({ embedded = false }: CalculatorSectio
           {/* Left Column: Inputs - Glassy */}
           <div className="h-full flex flex-col justify-center space-y-8 bg-white/5 backdrop-blur-xl p-8 rounded-3xl border border-white/20 shadow-xl relative overflow-hidden group transition-all duration-300">
             {/* Bottom-to-Top Fill Hover Effect */}
-            <div className="absolute -bottom-24 -left-24 w-48 h-48 bg-white/5 rounded-full blur-2xl scale-0 group-hover:scale-[10] transition-transform duration-700 ease-in-out pointer-events-none -z-0" />
+            <div className="absolute -bottom-24 -left-24 w-48 h-48 bg-white/5 rounded-full blur-2xl scale-0 group-hover:scale-[10] transition-transform duration-700 ease-in-out pointer-events-none z-0" />
 
             {/* Investment Amount */}
             <div className="space-y-4 relative z-10">
@@ -233,7 +233,7 @@ export default function CalculatorSection({ embedded = false }: CalculatorSectio
 
             <div className="h-full flex flex-col bg-white/10 backdrop-blur-2xl text-white p-8 rounded-3xl shadow-2xl border border-white/20 relative overflow-hidden group transition-all duration-300">
               {/* Bottom-to-Top Fill Hover Effect */}
-              <div className="absolute -bottom-24 -left-24 w-48 h-48 bg-white/10 rounded-full blur-2xl scale-0 group-hover:scale-[10] transition-transform duration-700 ease-in-out pointer-events-none -z-0" />
+              <div className="absolute -bottom-24 -left-24 w-48 h-48 bg-white/10 rounded-full blur-2xl scale-0 group-hover:scale-[10] transition-transform duration-700 ease-in-out pointer-events-none z-0" />
 
               <div className="space-y-8 relative z-10 my-auto">
                 <div>

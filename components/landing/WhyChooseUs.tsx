@@ -1,6 +1,9 @@
+"use client";
+
 import { ShieldCheck, Settings, LineChart, Lock } from "lucide-react";
 import { cn } from "@/lib/utils";
 import CardWrapper from "@/components/landing/CardWrapper";
+import { useInView } from "react-intersection-observer";
 
 const features = [
   {
@@ -44,32 +47,51 @@ export default function WhyChooseUs() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {features.map((feature, index) => {
-            const Icon = feature.icon;
-            return (
-              <CardWrapper
-                key={index}
-                className="p-8 border-transparent bg-white shadow-sm"
-                showCircle={true}
-                circlePosition="top-right"
-              >
-                <div className="mb-6 inline-flex p-3 rounded-xl bg-primary/5 text-primary group-hover/card:bg-primary group-hover/card:text-white transition-colors duration-300">
-                  <Icon className="w-6 h-6" />
-                </div>
-
-                <h4 className="text-lg font-bold text-foreground mb-3 group-hover/card:text-primary-deep transition-colors duration-300">
-                  {feature.title}
-                </h4>
-
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  {feature.description}
-                </p>
-              </CardWrapper>
-            );
-          })}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          {features.map((feature, index) => (
+            <FeatureCard key={index} feature={feature} index={index} />
+          ))}
         </div>
       </div>
     </section>
+  );
+}
+
+function FeatureCard({ feature, index }: { feature: typeof features[0]; index: number }) {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+    rootMargin: "-20px 0px",
+  });
+
+  const Icon = feature.icon;
+
+  return (
+    <div
+      ref={ref}
+      className={cn(
+        "transition-all duration-700 ease-out transform",
+        inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      )}
+      style={{ transitionDelay: `${index * 100}ms` }}
+    >
+      <CardWrapper
+        className="h-full p-8 border-transparent bg-white shadow-sm"
+        showCircle={true}
+        circlePosition="top-right"
+      >
+        <div className="mb-6 inline-flex p-3 rounded-xl bg-primary/5 text-primary group-hover/card:bg-primary group-hover/card:text-white transition-colors duration-300">
+          <Icon className="w-6 h-6" />
+        </div>
+
+        <h4 className="text-lg font-bold text-foreground mb-3 group-hover/card:text-primary-deep transition-colors duration-300">
+          {feature.title}
+        </h4>
+
+        <p className="text-muted-foreground text-sm leading-relaxed">
+          {feature.description}
+        </p>
+      </CardWrapper>
+    </div>
   );
 }

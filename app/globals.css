@@ -101,7 +101,7 @@
   --accent: oklch(0.371 0 0);
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
+  --border: oklch(0.704 0.191 22.216);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.556 0 0);
   --chart-1: oklch(0.87 0.12 207);
@@ -151,6 +151,30 @@
 
 .animation-delay-400 {
   animation-delay: 0.4s;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+
+  25% {
+    transform: translateY(-40px) translateX(20px);
+  }
+
+  50% {
+    transform: translateY(-10px) translateX(40px);
+  }
+
+  75% {
+    transform: translateY(30px) translateX(20px);
+  }
+}
+
+.animate-float {
+  animation: float 20s ease-in-out infinite;
 }
 
 /* Custom Plus Pattern */

@@ -14,12 +14,12 @@ function Card({
       data-slot="card"
       data-size={size}
       className={cn(
-        "group/card relative hover:shadow-[0_0_20px_0_rgba(0,0,0,0.1)] flex flex-col gap-6 overflow-hidden rounded-xl py-6 text-sm shadow-xs transition-all duration-300",
+        "group border hover:border hover:border-primary relative hover:shadow-[0_0_20px_0_rgba(0,0,0,0.1)] flex flex-col gap-6 overflow-hidden rounded-xl py-6 text-sm shadow-xs transition-all duration-300",
         // Base styles
         "ring-foreground/10 ring-1",
         // Active/Inactive styles
         isActive
-          ? "bg-[#e9f3f366] border-primary/20 shadow-sm scale-[1.02]"
+          ? "bg-[#e9f3f366] hover:border-primary shadow-sm scale-[1.02]"
           : "bg-card text-card-foreground hover:bg-white hover:border-primary/10",
         // Size variants
         "has-[>img:first-child]:pt-0 data-[size=sm]:gap-4 data-[size=sm]:py-4",
@@ -32,8 +32,7 @@ function Card({
       {children}
       {/* Line drawn out from center effect */}
       <div className={cn(
-        "absolute bottom-0 left-1/2 h-[2px] bg-primary transition-all duration-500 ease-out transform -translate-x-1/2",
-        isActive ? "w-full opacity-100" : "w-0 opacity-0"
+        "absolute bottom-0 group-hover:w-full group-hover:opacity-100 opacity-0 w-0 left-1/2 h-[2px] bg-primary transition-all duration-500 ease-out transform -translate-x-1/2",
       )} />
     </div>
   )

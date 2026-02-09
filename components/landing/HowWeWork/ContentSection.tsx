@@ -50,7 +50,7 @@ export default function ContentSection({ activeIndex, onHover }: ContentSectionP
             <Card
               key={index}
               isActive={isActive}
-              className="py-4 cursor-pointer border-transparent"
+              className="py-4 cursor-pointer"
               onMouseEnter={() => onHover(index)}
             >
               <CardHeader className="flex flex-row items-center gap-4 ">

@@ -227,7 +227,7 @@ export default function CalculatorSection({ embedded = false }: CalculatorSectio
           {/* Right Column: Breakdown - Custom Div Glassy */}
           <div className="relative h-full flex flex-col group/right">
             {/* Floating Badge - Removed Pulsing */}
-            <div className="absolute -top-4 -right-0 lg:-top-6 lg:-right-6 bg-white text-primary-deep font-bold px-6 py-2 rounded-full shadow-lg transform rotate-3 z-20 border-4 border-primary/20">
+            <div className="absolute -top-4 right-0 lg:-top-6 lg:-right-6 bg-white text-primary-deep font-bold px-6 py-2 rounded-full shadow-lg transform rotate-3 z-20 border-4 border-primary/20">
               {totalRate}% Total APY
             </div>
 

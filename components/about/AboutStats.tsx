@@ -75,7 +75,7 @@ function StatCard({
   return (
     <div
       className={cn(
-        "bg-blue-100/50 backdrop-blur-sm rounded-2xl p-8 text-center transition-all duration-700 ease-out transform",
+        "bg-blue-50/30 backdrop-blur-sm rounded-2xl p-8 text-center transition-all duration-700 ease-out transform",
         isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
       )}
       style={{ transitionDelay: `${index * 150}ms` }}

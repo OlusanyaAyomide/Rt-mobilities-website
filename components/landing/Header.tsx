@@ -36,8 +36,8 @@ export default function Header() {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
-    { name: "Live Inventory", href: "/inventory" },
     { name: "Contact Us", href: "/contact" },
+    { name: "RT Connect", href: "/inventory" },
   ];
 
   // Determine effective style

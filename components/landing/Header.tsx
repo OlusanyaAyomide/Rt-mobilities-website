@@ -14,7 +14,7 @@ export default function Header() {
   const pathname = usePathname();
 
   // Pages where the header should start transparent and become solid on scroll
-  const transparentHeaderPaths = ["/", "/about"];
+  const transparentHeaderPaths = ["/", "/about", "/contact"];
   const isTransparentPage = transparentHeaderPaths.includes(pathname);
 
   useEffect(() => {
@@ -37,7 +37,7 @@ export default function Header() {
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
     { name: "Contact Us", href: "/contact" },
-    { name: "RT Connect", href: "/inventory" },
+    { name: "RT Connect", href: "/rt-connect" },
   ];
 
   // Determine effective style

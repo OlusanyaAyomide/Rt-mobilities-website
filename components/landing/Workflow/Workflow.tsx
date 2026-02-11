@@ -1,3 +1,7 @@
+"use client";
+
+import { useInView } from "react-intersection-observer";
+import { cn } from "@/lib/utils";
 import WorkflowCard from "./WorkflowCard";
 
 const steps = [
@@ -24,16 +28,29 @@ const steps = [
 ];
 
 export default function Workflow() {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
     <section className="py-24 bg-primary/5 overflow-hidden relative">
       <div className="absolute inset-0 z-0 opacity-[0.6] bg-pattern-plus" />
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div ref={ref} className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-sm font-bold text-primary tracking-wider uppercase mb-3">
             Our Process
           </h2>
-          <h3 className="text-3xl md:text-4xl font-bold text-primary-deep mb-6">
+          <h3 className="text-3xl md:text-4xl font-bold text-primary-deep mb-6 inline-block relative">
             Our Workflow
+            {/* Animated Underline */}
+            <span
+              className={cn(
+                "absolute -bottom-2 left-0 h-1 bg-linear-to-r from-primary via-blue-500 to-primary rounded-full transition-all duration-1000 ease-out",
+                inView ? "w-full opacity-100" : "w-0 opacity-0"
+              )}
+              style={{ transitionDelay: "300ms" }}
+            />
           </h3>
           <p className="text-muted-foreground text-lg">
             A transparent and efficient process designed for your growth.

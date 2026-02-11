@@ -15,7 +15,7 @@ export default function Logo({ className, width = 120, height = 20 }: LogoProps)
         alt="RT Mobility Logo"
         width={width}
         height={height}
-        className="object-contain h-20"
+        className="object-contain h-14 md:h-20"
         priority
       />
     </div>

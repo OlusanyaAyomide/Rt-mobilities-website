@@ -30,7 +30,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="home" className="relative h-screen w-full overflow-hidden flex items-center justify-center">
+    <section id="home" className="relative min-h-screen w-full overflow-hidden flex items-center justify-center">
       {/* Background Video/Image */}
       <div className="absolute inset-0">
         {/* Placeholder for video - user can replace src */}
@@ -51,7 +51,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative  z-10 container mx-auto px-4 text-center mt-16 text-white">
+      <div className="relative  z-10 container mx-auto px-4 text-center mt-28 md:mt-16 text-white">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight drop-shadow-lg animate-fade-in-up">
           Empowering Wealth Through <br />
           <span className="text-primary">Asset-Backed </span>Mobility Investments

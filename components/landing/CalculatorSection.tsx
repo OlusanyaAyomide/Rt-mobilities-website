@@ -142,7 +142,7 @@ export default function CalculatorSection({ embedded = false }: CalculatorSectio
         </div>
       )}
 
-      <div className="container relative z-10 mx-auto px-4">
+      <div className="container relative z-10 mx-auto md:px-4">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-sm font-bold text-white/80 tracking-wider uppercase mb-3">
             ROI Calculator
@@ -227,7 +227,7 @@ export default function CalculatorSection({ embedded = false }: CalculatorSectio
           {/* Right Column: Breakdown - Custom Div Glassy */}
           <div className="relative h-full flex flex-col group/right">
             {/* Floating Badge - Removed Pulsing */}
-            <div className="absolute -top-4 -right-4 lg:-top-6 lg:-right-6 bg-white text-primary-deep font-bold px-6 py-2 rounded-full shadow-lg transform rotate-3 z-20 border-4 border-primary/20">
+            <div className="absolute -top-4 -right-0 lg:-top-6 lg:-right-6 bg-white text-primary-deep font-bold px-6 py-2 rounded-full shadow-lg transform rotate-3 z-20 border-4 border-primary/20">
               {totalRate}% Total APY
             </div>
 
@@ -262,7 +262,7 @@ export default function CalculatorSection({ embedded = false }: CalculatorSectio
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid md:grid-cols-2 gap-4">
                   <div className="p-5 rounded-2xl bg-black/20 border border-white/5">
                     <p className="text-xs text-white/60 mb-2 uppercase tracking-wide">Yearly Estimate</p>
                     <p className="text-xl font-bold text-white">{formatCurrency(yearlyReturn)}</p>

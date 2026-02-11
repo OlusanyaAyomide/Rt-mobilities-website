@@ -14,7 +14,7 @@ export default function Header() {
   const pathname = usePathname();
 
   // Pages where the header should start transparent and become solid on scroll
-  const transparentHeaderPaths = ["/"];
+  const transparentHeaderPaths = ["/", "/about"];
   const isTransparentPage = transparentHeaderPaths.includes(pathname);
 
   useEffect(() => {
@@ -61,18 +61,34 @@ export default function Header() {
 
         {/* Desktop Nav - Centered */}
         <nav className="hidden md:flex items-center gap-8 absolute left-1/2 transform -translate-x-1/2">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className={cn(
-                "text-sm font-medium transition-colors hover:text-primary",
-                showSolidHeader ? "text-foreground" : "text-white"
-              )}
-            >
-              {link.name}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = pathname === link.href;
+            return (
+              <Link
+                key={link.name}
+                href={link.href}
+                className={cn(
+                  "text-sm font-medium transition-all duration-200 relative",
+                  showSolidHeader
+                    ? isActive
+                      ? "text-primary font-semibold"
+                      : "text-foreground hover:text-primary"
+                    : isActive
+                      ? "text-white font-semibold"
+                      : "text-white/90 hover:text-white"
+                )}
+              >
+                {link.name}
+                {/* Active indicator underline */}
+                {isActive && (
+                  <span className={cn(
+                    "absolute -bottom-1 left-0 right-0 h-0.5 rounded-full",
+                    showSolidHeader ? "bg-primary" : "bg-white"
+                  )} />
+                )}
+              </Link>
+            );
+          })}
         </nav>
 
         <div className="hidden md:block">
@@ -91,16 +107,24 @@ export default function Header() {
       {/* Mobile Nav */}
       {isMobileMenuOpen && (
         <div className="absolute top-full left-0 right-0 bg-background border-b md:hidden p-4 flex flex-col gap-4 shadow-lg">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className="text-sm font-medium text-foreground hover:text-primary"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              {link.name}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = pathname === link.href;
+            return (
+              <Link
+                key={link.name}
+                href={link.href}
+                className={cn(
+                  "text-sm font-medium transition-colors",
+                  isActive
+                    ? "text-primary font-semibold"
+                    : "text-foreground hover:text-primary"
+                )}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {link.name}
+              </Link>
+            );
+          })}
           <Button className="w-full">Get Started</Button>
         </div>
       )}

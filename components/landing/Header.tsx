@@ -56,7 +56,7 @@ export default function Header() {
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link href="/" className="text-2xl font-bold text-primary flex items-center gap-2">
           {/* Logo could go here if requested, but user said use it on Hero */}
-          <Logo />
+          <Logo showText={!showSolidHeader} />
         </Link>
 
         {/* Desktop Nav - Centered */}

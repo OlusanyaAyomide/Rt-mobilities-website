@@ -11,20 +11,55 @@ import {
 
 const faqs = [
   {
-    question: "What happens in the event of a vehicle accident?",
-    answer: "All our assets are covered by comprehensive insurance through partners like AXA Mansard. In the event of an accident, RT Mobility handles the claims process and provides a replacement asset where possible to ensure your payouts remain uninterrupted."
+    question: "What services does RT Mobility offer?",
+    answer: (
+      <>
+        RT Mobility provides:
+        <ul className="list-disc pl-5 mt-2 space-y-1">
+          <li>Ride and transport services for individuals and businesses</li>
+          <li>Daily and long-term vehicle rentals (tricycles, motorcycles, cars, and buses)</li>
+          <li>Vehicle purchase and ownership programs for drivers and operators</li>
+          <li>Fleet and mobility partnerships for organizations and cooperatives</li>
+        </ul>
+      </>
+    )
   },
   {
-    question: "Can I liquidate my investment before the 18-month period?",
-    answer: "Yes, early liquidation is possible subject to a holding period and applicable terms. We provide a secondary market option where you can sell your stake to other interested participants."
+    question: "Who can use RT Mobility services?",
+    answer: (
+      <>
+        Our services are designed for:
+        <ul className="list-disc pl-5 mt-2 space-y-1">
+          <li>Daily commuters and transport users</li>
+          <li>Drivers and operators seeking vehicle access</li>
+          <li>Small transport business owners</li>
+          <li>Corporate and institutional partners</li>
+          <li>Community and cooperative transport groups</li>
+        </ul>
+      </>
+    )
   },
   {
-    question: "How are drivers vetted and managed?",
-    answer: "We use a rigorous vetting process including background checks, driving history verification, and mandatory training. All drivers are monitored in real-time using telematics to ensure safety and asset integrity."
+    question: "Does RT Mobility operate its own vehicles?",
+    answer: "Yes. RT Mobility operates and manages mobility assets either directly or through structured partnerships with drivers and fleet operators. All assets are monitored and supported through our operational systems."
   },
   {
-    question: "Is my capital legally protected?",
-    answer: "Yes, all asset purchases are legally backed by physical ownership documentation held in trust. We operate with full transparency and legal contracts that secure your interest in the deployment."
+    question: "How does RT Mobility support drivers and operators?",
+    answer: (
+      <>
+        We support drivers and operators by:
+        <ul className="list-disc pl-5 mt-2 space-y-1">
+          <li>Providing access to vehicles through rental or ownership programs</li>
+          <li>Offering structured onboarding and verification</li>
+          <li>Coordinating maintenance and operational support</li>
+          <li>Using technology to improve transparency and accountability</li>
+        </ul>
+      </>
+    )
+  },
+  {
+    question: "Is RT Mobility a financial or investment platform?",
+    answer: "No. RT Mobility is a transportation and mobility services company. Any structured participation or contribution programs are managed separately under dedicated platforms and are subject to their own terms and conditions."
   }
 ];
 
@@ -56,7 +91,7 @@ export default function FAQ() {
               FREQUENTLY ASKED QUESTIONS
             </h2>
             <p className="text-muted-foreground text-lg">
-              Common queries from our RT Mobility investment partners.
+              Common queries about our services and operations.
             </p>
           </div>
 

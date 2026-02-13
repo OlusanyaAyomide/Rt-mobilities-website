@@ -27,27 +27,25 @@ export default function Partners() {
           )}
         >
           <div>
-            <h2 className="text-3xl md:text-5xl font-bold text-primary-deep mb-6">
-              Become Our <span className="text-primary">Partner</span>
-            </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto">
-              Industry-leading solutions? Check. World-class partner program? Check.
-              Flexibility to build a business that works best for you? Check.
-              There really is no better time to become an RT Mobility partner.
-              Our business is based on helping partners run simple every day – why shouldn’t yours do the same?
-            </p>
-            <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto mt-4">
-              The RT Connect program provides you with the tools, resources, and benefits to
-              help you build, run, and grow a profitable business. Ready to join the future
-              of asset-backed mobility? Check!
-            </p>
-          </div>
+            <div>
+              <h2 className="text-sm font-bold text-primary tracking-wider uppercase mb-3">
+                PARTNERSHIPS & PROGRAMS
+              </h2>
+              <h3 className="text-3xl md:text-5xl font-bold text-primary-deep mb-6">
+                Looking to Participate <br />
+                <span className="text-primary">Beyond Usage?</span>
+              </h3>
+              <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto">
+                For organizations, cooperatives, and partners interested in structured participation programs, please visit <span className="text-primary font-semibold">RT Connect</span> our dedicated partnership and contribution platform.
+              </p>
+            </div>
 
-          <div className="pt-4">
-            <Button size="lg" className="bg-primary hover:bg-primary-deep text-white px-8 h-12 rounded-full shadow-lg shadow-primary/20 hover:shadow-xl transition-all hover:scale-105 active:scale-95 group">
-              Start Journey
-              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Button>
+            <div className="pt-4">
+              <Button size="lg" className="bg-primary hover:bg-primary-deep text-white px-8 h-12 rounded-full shadow-lg shadow-primary/20 hover:shadow-xl transition-all hover:scale-105 active:scale-95 group">
+                Visit RT Connect
+                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </div>
           </div>
         </div>
       </div>

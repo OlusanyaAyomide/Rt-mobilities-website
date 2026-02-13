@@ -6,23 +6,23 @@ import WorkflowCard from "./WorkflowCard";
 
 const steps = [
   {
-    title: "Investment Deposit",
-    description: "Begin your journey by downloading the RT Mobility app and creating your verified account. Once registered, explore our diverse range of mobility assets and select the participation model that aligns with your financial goals.",
+    title: "1. Choose Your Mobility Path",
+    description: "Ride with us, rent a vehicle, or apply for a purchase program.",
     gif: "/pay.gif",
   },
   {
-    title: "Purchase Mobility Assets",
-    description: "RT Mobility utilizes the pooled funds to acquire high-demand transportation vehicles and logistics units. We strategically deploy these assets into verified commercial fleets, ensuring they act as revenue-generating machines from day one.",
+    title: "2. Get Onboarded Digitally",
+    description: "Fast verification, clear terms, and seamless onboarding.",
     gif: "/order.gif",
   },
   {
-    title: "Operations",
-    description: "We handle the entire operational lifecycle through our professional management teams. From driver recruitment and maintenance to route optimization, RT Mobility ensures maximum efficiency without you lifting a finger.",
+    title: "3. Operate with Support",
+    description: "Access operational tools, maintenance coordination, and performance insights.",
     gif: "/operation.gif",
   },
   {
-    title: "Daily Payout",
-    description: "Enjoy the transparency of daily earnings directly in your app wallet. As our managed fleets generate revenue from daily operations, the surplus is calculated and distributed to you. Track performance in real-time.",
+    title: "4. Grow With the Platform",
+    description: "Scale usage, income, or fleet size with long‑term support.",
     gif: "/payout.gif",
   },
 ];
@@ -39,10 +39,10 @@ export default function Workflow() {
       <div className="container mx-auto px-4">
         <div ref={ref} className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-sm font-bold text-primary tracking-wider uppercase mb-3">
-            Our Process
+            Simple. Structured. Scalable.
           </h2>
           <h3 className="text-3xl md:text-4xl font-bold text-primary-deep mb-6 inline-block relative">
-            Our Workflow
+            HOW RT-MOBILITY WORKS
             {/* Animated Underline */}
             <span
               className={cn(
@@ -53,7 +53,7 @@ export default function Workflow() {
             />
           </h3>
           <p className="text-muted-foreground text-lg">
-            A transparent and efficient process designed for your growth.
+            A seamless process designed for your success.
           </p>
         </div>
 

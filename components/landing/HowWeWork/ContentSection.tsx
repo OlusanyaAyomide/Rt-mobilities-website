@@ -11,18 +11,18 @@ interface ContentSectionProps {
 
 const contentData = [
   {
-    title: "1. Transportation",
-    description: "Participate in revenue-generating mobility fleets managed by professionals. We handle the logistics while you earn from daily operations.",
+    title: "1. Ride Services",
+    description: "Safe, reliable, and affordable transport for daily commuting and intra‑city movement.",
     icon: Car,
   },
   {
-    title: "2. Asset Management",
-    description: "Our structured model tracks asset deployment, ensures professional maintenance, and monitors all operations centrally for maximum efficiency.",
+    title: "2. Vehicle Rentals",
+    description: "Daily and long‑term rental options for tricycles, motorcycles, and cars — ideal for personal or commercial use.",
     icon: Building2,
   },
   {
-    title: "3. Operations",
-    description: "Earn from daily operations powered by technology. We provide full transparency into performance, usage, and revenue generation in real-time.",
+    title: "3. Purchase & Ownership Schemes",
+    description: "Flexible vehicle acquisition programs that enable drivers and partners to own mobility assets over time.",
     icon: Activity,
   },
 ];
@@ -33,11 +33,15 @@ export default function ContentSection({ activeIndex, onHover }: ContentSectionP
       <div className="flex flex-col gap-2">
         <div className="flex items-center justify-between">
           <span className="rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
-            How We Work
+            Our Mobility Services
           </span>
         </div>
+        <h2 className="text-3xl font-bold text-primary-deep">
+          Everyday Mobility, <br />
+          <span className="text-primary">Built for Real Needs</span>
+        </h2>
         <p className="text-muted-foreground max-w-lg">
-          A seamless ecosystem designed for transparency and performance.
+          Rt-mobility delivers practical transportation solutions designed for individuals, businesses, and communities.
         </p>
       </div>
 

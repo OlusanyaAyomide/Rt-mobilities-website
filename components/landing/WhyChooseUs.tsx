@@ -1,30 +1,31 @@
 "use client";
 
-import { ShieldCheck, Settings, LineChart, Lock } from "lucide-react";
+import { ShieldCheck, Settings, LineChart, Lock, Users, Briefcase, Key, Smartphone, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import CardWrapper from "@/components/landing/CardWrapper";
 import { useInView } from "react-intersection-observer";
+import { Button } from "@/components/ui/button";
 
 const features = [
   {
-    title: "Asset-Backed Model",
-    description: "Your participation is tied to real, physical transportation assets that generate daily value.",
-    icon: ShieldCheck,
+    title: "Sustainable Income",
+    description: "Creating sustainable income opportunities for drivers and partners.",
+    icon: Users,
   },
   {
-    title: "Managed Operations",
-    description: "Professional teams handle all logistics, maintenance, and drivers, ensuring maximum efficiency.",
-    icon: Settings,
+    title: "Business Support",
+    description: "Supporting small transport businesses to grow and manage fleets efficiently.",
+    icon: Briefcase,
   },
   {
-    title: "Transparent Performance",
-    description: "Track asset performance, revenue, and utilization in real-time through our app.",
-    icon: LineChart,
+    title: "Access to Assets",
+    description: "Enabling access to modern mobility assets for improved service delivery.",
+    icon: Key,
   },
   {
-    title: "Secure Technology",
-    description: "Built on robust infrastructure to ensure data integrity and secure earnings distribution.",
-    icon: Lock,
+    title: "Transparency",
+    description: "Promoting accountability and trust through technology-driven operations.",
+    icon: Smartphone, // or Lock/LineChart
   },
 ];
 
@@ -42,10 +43,10 @@ export default function WhyChooseUs() {
       <div className="container relative z-10 mx-auto px-4">
         <div ref={ref} className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-sm font-bold text-primary tracking-wider uppercase mb-3">
-            The Fundamentals
+            EMPOWERMENT & COMMUNITY IMPACT
           </h2>
           <h3 className="text-3xl md:text-4xl font-bold text-primary-deep mb-6 inline-block relative">
-            Why  <span className="text-primary">RT Mobility ?</span>
+            Mobility That <span className="text-primary">Creates Opportunity</span>
             {/* Animated Underline */}
             <span
               className={cn(
@@ -55,15 +56,25 @@ export default function WhyChooseUs() {
               style={{ transitionDelay: "300ms" }}
             />
           </h3>
+          <p className="text-muted-foreground text-lg mb-2">
+            Rt-mobility is designed to go beyond transportation.
+          </p>
           <p className="text-muted-foreground text-lg">
-            In a volatile economic landscape, mobility remains a critical utility with consistent cash-flow characteristics.
+            We empower drivers, operators, and partners by:
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
           {features.map((feature, index) => (
             <FeatureCard key={index} feature={feature} index={index} />
           ))}
+        </div>
+
+        <div className="flex justify-center">
+          <Button size="lg" className="bg-primary hover:bg-primary-deep text-white px-8 h-12 rounded-full shadow-lg hover:scale-105 transition-all group">
+            Become a Mobility Partner
+            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </Button>
         </div>
       </div>
     </section>

@@ -114,22 +114,22 @@ export default function MobileAppOverview() {
           <div className="w-full lg:w-1/2 text-center lg:text-left space-y-8">
             <div className="space-y-4">
               <h2 className="text-3xl md:text-5xl font-bold leading-tight">
-                MANAGE EVERYTHING <br />
+                Mobility at <br />
                 <span className="text-transparent bg-clip-text bg-linear-to-r from-white to-white/60">
-                  FROM YOUR PHONE.
+                  Your Fingertips
                 </span>
               </h2>
               <p className="text-lg text-white/70 max-w-xl mx-auto lg:mx-0">
-                The RT Connect app provides real-time oversight of your asset
-                performance, daily surplus tracking, and instant wallet withdrawals.
+                Use the Rt-mobility app to:
               </p>
             </div>
 
             <ul className="space-y-4 text-left max-w-md mx-auto lg:mx-0">
               {[
-                "Instant settlement of operational earnings",
-                "Live GPS location of participating units",
-                "Transparent ledger of all costs and revenue"
+                "Access ride and rental services",
+                "Manage vehicle programs",
+                "Track usage and activity",
+                "Get support and updates"
               ].map((item, idx) => (
                 <li key={idx} className="flex items-center gap-3 text-white/90">
                   <CheckCircle2 className="w-5 h-5 text-cyan-400 shrink-0" />

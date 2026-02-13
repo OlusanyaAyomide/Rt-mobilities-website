@@ -5,9 +5,9 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 const images = [
-  { src: "/transport.webp", alt: "Transportation" },
-  { src: "/assests.jpeg", alt: "Asset Management" },
-  { src: "/operation.jpg", alt: "Operations" },
+  { src: "/transport.webp", alt: "Ride Services" },
+  { src: "/assests.jpeg", alt: "Vehicle Rentals" },
+  { src: "/operation.jpg", alt: "Ownership Schemes" },
 ];
 
 interface CarouselSectionProps {

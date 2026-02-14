@@ -1,8 +1,19 @@
-export default function InventoryPage() {
+import RtConnectHero from "@/components/rt-connect/RtConnectHero";
+import WhatIsRtConnect from "@/components/rt-connect/WhatIsRtConnect";
+import RtConnectProcess from "@/components/rt-connect/RtConnectProcess";
+import InvestmentOpportunities from "@/components/rt-connect/InvestmentOpportunities";
+import RtConnectFeatures from "@/components/rt-connect/RtConnectFeatures";
+import RtConnectMobileApp from "@/components/rt-connect/RtConnectMobileApp";
+
+export default function RtConnectPage() {
   return (
-    <div className="container mx-auto px-4 py-20 pt-32">
-      <h1 className="text-4xl font-bold mb-4">Live Inventory</h1>
-      <p className="text-muted-foreground">Live Inventory content placeholder.</p>
-    </div>
+    <>
+      <RtConnectHero />
+      <WhatIsRtConnect />
+      <RtConnectProcess />
+      <InvestmentOpportunities />
+      <RtConnectFeatures />
+      <RtConnectMobileApp />
+    </>
   );
 }

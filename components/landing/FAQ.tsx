@@ -71,7 +71,7 @@ export default function FAQ() {
   });
 
   return (
-    <section className="relative py-24 bg-blue-50/30 overflow-hidden border-t border-white/50">
+    <section id="faq" className="relative py-24 bg-blue-50/30 overflow-hidden border-t border-white/50">
       {/* Background Pattern - Continued from Partners */}
       <div className="absolute inset-0 z-0 opacity-[0.6] bg-pattern-plus" />
 

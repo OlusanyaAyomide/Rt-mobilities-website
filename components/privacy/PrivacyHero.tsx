@@ -21,7 +21,7 @@ export default function PrivacyHero() {
 
             <div className="flex items-center gap-2 text-xs font-semibold tracking-widest text-muted-foreground uppercase whitespace-nowrap">
               <Calendar className="w-4 h-4 text-primary" />
-              Updated: Oct 2023
+              Updated: Feb 2026
             </div>
           </div>
         </div>

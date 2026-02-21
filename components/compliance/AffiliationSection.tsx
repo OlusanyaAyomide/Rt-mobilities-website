@@ -84,7 +84,7 @@ export default function AffiliationSection() {
 
           {/* Right Image */}
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-4/3">
               <Image
                 src="/compliance-hammer.jpg"
                 alt="Regulatory Compliance - Scales of Justice"

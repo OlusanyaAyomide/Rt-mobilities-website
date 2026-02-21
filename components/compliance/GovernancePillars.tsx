@@ -84,7 +84,7 @@ export default function GovernancePillars() {
               <div
                 key={index}
                 className={cn(
-                  "bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-2xl p-7 transition-all duration-700 ease-out transform hover:bg-white/[0.1] hover:border-white/20 hover:-translate-y-1",
+                  "bg-white/6 backdrop-blur-sm border border-white/10 rounded-2xl p-7 transition-all duration-700 ease-out transform hover:bg-white/10 hover:border-white/20 hover:-translate-y-1",
                   cardsInView
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-10"

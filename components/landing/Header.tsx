@@ -14,7 +14,7 @@ export default function Header() {
   const pathname = usePathname();
 
   // Pages where the header should start transparent and become solid on scroll
-  const transparentHeaderPaths = ["/", "/about", "/contact", "/rt-connect", "/compliance"];
+  const transparentHeaderPaths = ["/", "/about", "/contact", "/rt-connect", "/compliance", "/help"];
   const isTransparentPage = transparentHeaderPaths.includes(pathname);
 
   useEffect(() => {

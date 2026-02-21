@@ -5,6 +5,8 @@ import HelpHero from "@/components/help/HelpHero";
 import HelpTopics from "@/components/help/HelpTopics";
 import HelpFAQ from "@/components/help/HelpFAQ";
 
+import HelpCTA from "@/components/help/HelpCTA";
+
 export default function HelpPage() {
   const [openFaq, setOpenFaq] = useState("");
 
@@ -13,6 +15,7 @@ export default function HelpPage() {
       <HelpHero onSelectFaq={setOpenFaq} />
       <HelpTopics />
       <HelpFAQ openValue={openFaq} onValueChange={setOpenFaq} />
+      <HelpCTA />
     </>
   );
 }

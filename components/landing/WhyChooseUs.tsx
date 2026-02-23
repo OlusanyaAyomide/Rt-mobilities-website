@@ -57,7 +57,7 @@ export default function WhyChooseUs() {
             />
           </h3>
           <p className="text-muted-foreground text-lg mb-2">
-            Rt-mobility is designed to go beyond transportation.
+            RT Mobility is designed to go beyond transportation.
           </p>
           <p className="text-muted-foreground text-lg">
             We empower drivers, operators, and partners by:

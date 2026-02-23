@@ -39,8 +39,7 @@ export default function Footer() {
           <div className="space-y-6">
             <h4 className="font-bold text-lg">Quick Links</h4>
             <ul className="space-y-4 text-muted-foreground">
-              <li><Link href="/inventory" className="hover:text-primary transition-colors">Inventory</Link></li>
-              <li><Link href="/calculator" className="hover:text-primary transition-colors">Calculator</Link></li>
+              <li><Link href="/rt-connect" className="hover:text-primary transition-colors">RT Connect</Link></li>
               <li><Link href="/#faq" className="hover:text-primary transition-colors">FAQs</Link></li>
             </ul>
           </div>

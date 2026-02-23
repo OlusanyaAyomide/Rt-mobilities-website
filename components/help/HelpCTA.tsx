@@ -56,7 +56,7 @@ export default function HelpCTA() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
               <a
                 href="/contact"
-                className="inline-flex text-white items-center gap-2 px-8 py-3.5 rounded-xl bg-[#00D0F5] text-primary-deep font-bold text-sm hover:bg-[#00D0F5]/90 hover:scale-105 active:scale-95 transition-all shadow-md"
+                className="inline-flex text-white items-center gap-2 px-8 py-3.5 rounded-xl bg-[#00D0F5] font-bold text-sm hover:bg-[#00D0F5]/90 hover:scale-105 active:scale-95 transition-all shadow-md"
               >
                 <Phone className="w-4 h-4" />
                 Request a Call

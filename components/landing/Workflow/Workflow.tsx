@@ -42,7 +42,7 @@ export default function Workflow() {
             Simple. Structured. Scalable.
           </h2>
           <h3 className="text-3xl md:text-4xl font-bold text-primary-deep mb-6 inline-block relative">
-            HOW RT-MOBILITY WORKS
+            HOW RT Mobility WORKS
             {/* Animated Underline */}
             <span
               className={cn(

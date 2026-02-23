@@ -41,7 +41,7 @@ export default function ContentSection({ activeIndex, onHover }: ContentSectionP
           <span className="text-primary">Built for Real Needs</span>
         </h2>
         <p className="text-muted-foreground max-w-lg">
-          Rt-mobility delivers practical transportation solutions designed for individuals, businesses, and communities.
+          RT Mobility delivers practical transportation solutions designed for individuals, businesses, and communities.
         </p>
       </div>
 

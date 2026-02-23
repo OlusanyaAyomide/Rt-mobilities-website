@@ -57,7 +57,7 @@ export default function Hero() {
           Powering <span className="text-primary">Livelihoods</span> and Communities.
         </h1>
         <p className="text-lg md:text-xl md:max-w-3xl mx-auto mb-10 text-white/90 drop-shadow-md animate-fade-in-up animation-delay-200">
-          Rt-mobility is a technology‑driven mobility company providing affordable transport services, vehicle access programs, and sustainable income opportunities across Nigeria.
+          RT Mobility is a technology‑driven mobility company providing affordable transport services, vehicle access programs, and sustainable income opportunities across Nigeria.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up animation-delay-400">

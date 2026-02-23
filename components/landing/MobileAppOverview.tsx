@@ -120,7 +120,7 @@ export default function MobileAppOverview() {
                 </span>
               </h2>
               <p className="text-lg text-white/70 max-w-xl mx-auto lg:mx-0">
-                Use the Rt-mobility app to:
+                Use the RT Mobility app to:
               </p>
             </div>
 

@@ -20,7 +20,7 @@ export default function HowWeWork() {
   const startTimer = () => {
     stopTimer();
     timerRef.current = setTimeout(() => {
-      setActiveIndex((prev) => (prev + 1) % 3);
+      setActiveIndex((prev) => (prev + 1) % 4);
     }, 5000); // 5 seconds
   };
 
@@ -38,9 +38,9 @@ export default function HowWeWork() {
 
   const handleSwipe = (direction: "left" | "right") => {
     if (direction === "left") {
-      setActiveIndex((prev) => (prev + 1) % 3);
+      setActiveIndex((prev) => (prev + 1) % 4);
     } else {
-      setActiveIndex((prev) => (prev - 1 + 3) % 3);
+      setActiveIndex((prev) => (prev - 1 + 4) % 4);
     }
   };
 

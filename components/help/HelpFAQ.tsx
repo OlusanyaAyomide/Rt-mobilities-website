@@ -57,7 +57,7 @@ export const helpFaqs = [
     value: "faq-7",
     question: "Is RT Mobility a financial or investment platform?",
     answer:
-      "No. RT Mobility is a transportation and mobility services company. Any structured participation or contribution programs are managed separately under dedicated platforms and are subject to their own terms and conditions.",
+      "No. RT Mobility is a transportation and mobility services company.Any structured participation or contribution programs are managed separately under dedicated platforms and are subject to their own terms and conditions",
   },
 ];
 

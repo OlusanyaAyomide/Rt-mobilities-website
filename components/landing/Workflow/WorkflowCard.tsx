@@ -65,7 +65,10 @@ export default function WorkflowCard({ step, index }: WorkflowCardProps) {
           </p>
 
           <Button
-            className="w-fit h-12 rounded-full px-6 bg-primary-deep hover:bg-primary transition-all duration-300"
+            className={cn(
+              "w-fit h-12 rounded-full px-6 bg-primary-deep hover:bg-primary transition-all duration-300",
+              index === 2 && "md:-mt-4"
+            )}
             size="sm"
           >
             Learn More

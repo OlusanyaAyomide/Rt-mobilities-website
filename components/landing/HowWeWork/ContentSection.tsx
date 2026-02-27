@@ -2,7 +2,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import { Car, Building2, Activity } from "lucide-react";
+import { Car, Building2, Activity, Briefcase } from "lucide-react";
 
 interface ContentSectionProps {
   activeIndex: number;
@@ -25,11 +25,16 @@ const contentData = [
     description: "Flexible vehicle acquisition programs that enable drivers and partners to own mobility assets over time.",
     icon: Activity,
   },
+  {
+    title: "4. Managed Services",
+    description: "Own the asset, outsource the headache: Let RT Mobility handle the engineering, driver vetting, and daily remittances while you enjoy a truly passive, tech-managed income from your existing fleet.",
+    icon: Briefcase,
+  },
 ];
 
 export default function ContentSection({ activeIndex, onHover }: ContentSectionProps) {
   return (
-    <div className="flex flex-col justify-center gap-8 p-4 md:p-8">
+    <div className="flex flex-col justify-center gap-6 p-4 md:p-8">
       <div className="flex flex-col gap-2">
         <div className="flex items-center justify-between">
           <span className="rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
@@ -45,7 +50,7 @@ export default function ContentSection({ activeIndex, onHover }: ContentSectionP
         </p>
       </div>
 
-      <div className="grid gap-3">
+      <div className="grid gap-2.5">
         {contentData.map((item, index) => {
           const isActive = index === activeIndex;
           const Icon = item.icon;
@@ -54,12 +59,12 @@ export default function ContentSection({ activeIndex, onHover }: ContentSectionP
             <Card
               key={index}
               isActive={isActive}
-              className="py-4 cursor-pointer"
+              className="py-3 cursor-pointer"
               onMouseEnter={() => onHover(index)}
             >
               <CardHeader className="flex flex-row items-center gap-4 ">
                 <div className={cn(
-                  "p-2 rounded-lg transition-colors duration-300",
+                  "p-1.5 rounded-lg transition-colors duration-300",
                   isActive ? "bg-primary text-white" : "bg-muted text-muted-foreground group-hover/card:bg-primary/10 group-hover/card:text-primary"
                 )}>
                   <Icon className="h-5 w-5" />

@@ -8,7 +8,7 @@ import CardWrapper from "@/components/landing/CardWrapper";
 const contactDetails = [
   {
     title: "Head Office Address",
-    value: "Mulliner Towers, 39 Alfred Rewane Rd, Ikoyi, Lagos, Nigeria",
+    value: "9A, Akinbi Close, Off Olusegun Coker Street, Ijaiye, Ojokoro, Lagos State, Nigeria",
     icon: MapPin,
     action: "View on Map",
     color: "bg-blue-50 text-blue-600",
@@ -22,7 +22,7 @@ const contactDetails = [
   },
   {
     title: "Email Address",
-    value: "info@rtmobility.ng",
+    value: "investor-rtconnect@riverscope.global",
     icon: Mail,
     action: "Send an email",
     color: "bg-sky-50 text-sky-600",

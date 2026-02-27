@@ -8,12 +8,12 @@ const steps = [
   {
     title: "1. Choose Your Mobility Path",
     description: "Ride with us, rent a vehicle, or apply for a purchase program.",
-    gif: "/pay.gif",
+    gif: "/order.gif",
   },
   {
     title: "2. Get Onboarded Digitally",
     description: "Fast verification, clear terms, and seamless onboarding.",
-    gif: "/order.gif",
+    gif: "/digital.gif",
   },
   {
     title: "3. Operate with Support",
@@ -42,7 +42,7 @@ export default function Workflow() {
             Simple. Structured. Scalable.
           </h2>
           <h3 className="text-3xl md:text-4xl font-bold text-primary-deep mb-6 inline-block relative">
-            HOW RT Mobility WORKS
+            HOW <span className="capitalize">RT Mobility</span> WORKS
             {/* Animated Underline */}
             <span
               className={cn(

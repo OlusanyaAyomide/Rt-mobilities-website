@@ -38,6 +38,7 @@ export default function Header() {
     { name: "About Us", href: "/about" },
     { name: "Contact Us", href: "/contact" },
     { name: "RT Connect", href: "/rt-connect" },
+    { name: "Compliance", href: "/compliance" },
   ];
 
   // Determine effective style

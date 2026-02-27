@@ -8,6 +8,7 @@ const images = [
   { src: "/transport.webp", alt: "Ride Services" },
   { src: "/assests.jpeg", alt: "Vehicle Rentals" },
   { src: "/operation.jpg", alt: "Ownership Schemes" },
+  { src: "/garage.jpg", alt: "Managed Services" },
 ];
 
 interface CarouselSectionProps {
@@ -48,7 +49,7 @@ export default function CarouselSection({ activeIndex, onSwipe, onDotClick }: Ca
 
   return (
     <div
-      className="relative h-[500px] w-full overflow-hidden rounded-2xl md:h-[580px] touch-pan-y"
+      className="relative h-[500px] w-full overflow-hidden rounded-2xl lg:h-full lg:min-h-[716px] touch-pan-y"
       onTouchStart={onTouchStart}
       onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
@@ -81,7 +82,8 @@ export default function CarouselSection({ activeIndex, onSwipe, onDotClick }: Ca
             "h-2 w-2 rounded-full",
             activeIndex === 0 ? "bg-emerald-400" :
               activeIndex === 1 ? "bg-blue-400" :
-                "bg-amber-400"
+                activeIndex === 2 ? "bg-amber-400" :
+                  "bg-purple-400"
           )} />
           {images[activeIndex].alt}
         </div>

@@ -23,7 +23,7 @@ export default function TermsCTA() {
           {/* Plus pattern subtle overlay */}
           <div className="absolute inset-0 z-0 opacity-[0.07] bg-pattern-plus" />
 
-          {/* Top-right decorative circle — darker blue tone */}
+          {/* Top-right decorative circle  darker blue tone */}
           <div
             className="absolute -top-16 -right-16 w-56 h-56 rounded-full z-0 pointer-events-none"
             style={{ background: "oklch(16% 0.06 258)" }}
@@ -34,7 +34,7 @@ export default function TermsCTA() {
             style={{ background: "oklch(18% 0.055 258)" }}
           />
 
-          {/* Bottom-left decorative circle — darker blue tone */}
+          {/* Bottom-left decorative circle darker blue tone */}
           <div
             className="absolute -bottom-16 -left-16 w-56 h-56 rounded-full z-0 pointer-events-none"
             style={{ background: "oklch(16% 0.06 258)" }}

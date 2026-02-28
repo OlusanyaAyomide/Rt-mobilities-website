@@ -12,9 +12,9 @@ export default function ContactMap() {
     threshold: 0.1,
   });
 
-  const lat = "6.528802394866941";
-  const lng = "3.394451856613158";
-  const mapUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.653456789!2d${lng}!3d${lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMzEnNDMuNyJOIDPCsDIzJzQwLjAiRQ!5e0!3m2!1sen!2sng!4v1707692443200!5m2!1sen!2sng`;
+  const lat = "6.6667";
+  const lng = "3.2833";
+  const mapUrl = `https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3964.653456789!2d${lng}!3d${lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1707692443200!5m2!1sen!2sng&q=${lat},${lng}`;
 
   const handleResetMap = () => {
     setMapKey(prev => prev + 1);
@@ -66,7 +66,7 @@ export default function ContactMap() {
           <div className="bg-white/95 backdrop-blur-md p-6 rounded-2xl shadow-xl max-w-[280px] border border-white/20">
             <h3 className="font-bold text-primary-deep text-lg mb-2">Our Location</h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Ikoyi, Lagos - The heart of business and mobility solutions.
+              9A, Akinbi Close, Off Olusegun Coker Street, Ijaiye, Ojokoro
             </p>
           </div>
         </div>

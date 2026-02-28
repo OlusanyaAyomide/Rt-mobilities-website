@@ -78,7 +78,7 @@ export default function MobileAppOverview() {
 
       <div className="container relative z-10 mx-auto px-4 space-y-32">
         {/* Calculator Section */}
-        <div
+        {/* <div
           ref={calcRef}
           className={cn(
             "transition-all duration-1000 ease-out transform",
@@ -86,7 +86,7 @@ export default function MobileAppOverview() {
           )}
         >
           <CalculatorSection embedded={true} />
-        </div>
+        </div> */}
 
         {/* Mobile App Overview Section */}
         <div

@@ -24,7 +24,7 @@ export default function ContactForm() {
         <div>
           <h2 className="text-3xl md:text-4xl font-bold text-primary-deep mb-3">Send us a Message</h2>
           <p className="text-muted-foreground text-lg">
-            Have a question, partnership inquiry, or need support? Reach out — we’ll respond promptly.
+            Have a question, partnership inquiry, or need support? Reach out we’ll respond promptly.
           </p>
         </div>
 

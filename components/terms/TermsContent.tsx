@@ -17,7 +17,7 @@ export default function TermsContent() {
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto flex gap-10">
 
-          {/* Sticky sidebar — hidden on mobile */}
+          {/* Sticky sidebar hidden on mobile */}
           <div className="hidden md:block sticky top-28 self-start">
             <TermsSidebar activeSection={activeSection} />
           </div>

@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 
 
@@ -57,15 +58,15 @@ export default function Hero() {
           Powering <span className="text-primary">Livelihoods</span> and Communities.
         </h1>
         <p className="text-lg md:text-xl md:max-w-3xl mx-auto mb-10 text-white/90 drop-shadow-md animate-fade-in-up animation-delay-200">
-          RT Mobility is a technology‑driven mobility company providing affordable transport services, vehicle access programs, and sustainable income opportunities across Nigeria.
+          RT Mobility is a technology‑driven ecosystem and a flagship product of Riverscope Technologies Ltd, providing affordable transport services, vehicle access programs, and sustainable income opportunities across Nigeria.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up animation-delay-400">
-          <Button size="lg" className="bg-primary hover:bg-primary-deep text-white px-8 h-12 rounded-full text-base font-semibold shadow-lg hover:scale-105 transition-all">
-            Explore Our Mobility Services
+          <Button asChild size="lg" className="bg-primary hover:bg-primary-deep text-white px-8 h-12 rounded-full text-base font-semibold shadow-lg hover:scale-105 transition-all">
+            <Link href="/managed-services">Explore Our Mobility Services</Link>
           </Button>
-          <Button size="lg" variant="outline" className="bg-transparent border-white/30 text-white hover:bg-white/10 hover:text-white px-8 h-12 rounded-full text-base font-semibold backdrop-blur-sm hover:scale-105 transition-all">
-            Partner With Us
+          <Button asChild size="lg" variant="outline" className="bg-transparent border-white/30 text-white hover:bg-white/10 hover:text-white px-8 h-12 rounded-full text-base font-semibold backdrop-blur-sm hover:scale-105 transition-all">
+            <Link href="/contact">Partner With Us</Link>
           </Button>
         </div>
 

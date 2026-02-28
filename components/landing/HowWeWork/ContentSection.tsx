@@ -17,7 +17,7 @@ const contentData = [
   },
   {
     title: "2. Vehicle Rentals",
-    description: "Daily and long‑term rental options for tricycles, motorcycles, and cars — ideal for personal or commercial use.",
+    description: "Daily and long‑term rental options for tricycles, motorcycles, and cars ideal for personal or commercial use.",
     icon: Building2,
   },
   {

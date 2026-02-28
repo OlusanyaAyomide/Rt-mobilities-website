@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "RT Mobility | Empowering Wealth Through Asset-Backed Mobility Investments",
-  description: "Participate in real transportation assets and earn from daily operations — powered by technology and driven by transparency.",
+  description: "Participate in real transportation assets and earn from daily operations powered by technology and driven by transparency.",
   icons: {
     icon: "/logo.png",
   },

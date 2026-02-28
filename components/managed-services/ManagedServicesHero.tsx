@@ -18,7 +18,7 @@ const processCards = [
     label: "DAILY OPERATIONS",
     title: "Full Logistics Control",
     description:
-      "Trip scheduling, driver coordination, and route optimisation — handled end-to-end by our operations team.",
+      "Trip scheduling, driver coordination, and route optimisation handled end-to-end by our operations team.",
     accent: "bg-primary/90",
   },
   {
@@ -109,7 +109,7 @@ export default function ManagedServicesHero() {
 
             <p className="text-lg md:text-xl max-w-xl mb-10 text-white/80 leading-relaxed animate-fade-in-up animation-delay-200">
               You own the asset. We run the business. Experience institutional-grade
-              operational excellence — from driver vetting to daily remittances,
+              operational excellence from driver vetting to daily remittances,
               fully managed by RT Mobility.
             </p>
 

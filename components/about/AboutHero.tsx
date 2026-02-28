@@ -31,7 +31,7 @@ export default function AboutHero() {
         </h1>
 
         <p className="text-lg md:text-xl max-w-3xl mx-auto mb-10 text-white/90 leading-relaxed drop-shadow-md animate-fade-in-up animation-delay-200">
-          RT Mobility was created to bridge the gap between transportation demand and accessible investment opportunities. We believe mobility is not just a service — it is an asset class that can create sustainable value when managed properly.
+          RT Mobility was created to bridge the gap between transportation demand and accessible investment opportunities. We believe mobility is not just a service it is an asset class that can create sustainable value when managed properly.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up animation-delay-400">
